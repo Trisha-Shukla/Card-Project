@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Information Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: lightblue;
+        }
+        h1{
+            padding: 10px 0;
+        }
+        .container{
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.296);
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+        }
+        #user-info{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="info-card">
+            <h1>User Information Card</h1>
+            <div id="user-info">
+                <div class="field">
+                    <span class="label">First Name:</span>
+                    <span id="first-name"></span>
+                </div>
+                <div class="field">
+                    <span class="label">Last Name:</span>
+                    <span id="last-name"></span>
+                </div>
+                <div class="field">
+                    <span class="label">Country:</span>
+                    <span id="country"></span>
+                </div>
+                <div class="field">
+                    <span class="label">Phone Number:</span>
+                    <span id="phone-number"></span>
+                </div>
+                <div class="field">
+                    <span class="label">State:</span>
+                    <span id="state"></span>
+                </div>
+                <div class="field">
+                    <span class="label">City:</span>
+                    <span id="city"></span>
+                </div>
+                <div class="field">
+                    <span class="label">Village:</span>
+                    <span id="village"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
